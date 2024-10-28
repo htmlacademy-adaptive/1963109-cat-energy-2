@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Максим Жиделёв](https://up.htmlacademy.ru/adaptive-individual/2/user/1963109).
-* Наставник: `Неизвестно`.
+* Наставник: [Виталий Драгулин](https://htmlacademy.ru/profile/id1008501).
 
 ---
 
