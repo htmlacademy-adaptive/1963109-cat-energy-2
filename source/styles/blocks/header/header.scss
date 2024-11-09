@@ -1,0 +1,38 @@
+//пример
+// .header {
+//   @include button-rounded;
+//   background-color: $header-bg;
+//   color: $header-color;
+
+//   &::before {
+//     content: "";
+//   }
+
+//   &::after {
+//     content: "";
+//   }
+
+//   &:hover {}
+//   &:focus {}
+
+//   @media (min-width: 768px) {}
+
+//   &--mobile {} // модификатор блока
+// }
+
+// .header__logo {
+//   &::before {
+//     content: "";
+//   }
+
+//   &::after {
+//     content: "";
+//   }
+
+//   &:hover {}
+//   &:focus {}
+
+//   @media (min-width: 768px) {}
+
+//   &--big {} // модификатор элемента
+// }
