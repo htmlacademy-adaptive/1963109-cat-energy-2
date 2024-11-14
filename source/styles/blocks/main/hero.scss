@@ -1,6 +1,11 @@
-// .hero{
-
-// }
+.hero {
+  background-color: $bg-basic_green;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-image: url("../../../images/hero-background-mobile@1x.jpg");
+  background-position: 50% 0;
+}
 
 // .hero__wrapper{
 
@@ -25,6 +30,7 @@
 
 // }
 
-// .hero__choose-pr{
-
-// }
+.hero__choose-pr {
+  display: block;
+  padding: 10px 64px;
+}

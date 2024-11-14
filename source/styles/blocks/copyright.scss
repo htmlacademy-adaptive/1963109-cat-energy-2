@@ -9,6 +9,19 @@
   text-align: left;
 }
 
-// .copyright__logo{
+.copyright__text::after {
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #666666;
+  min-width: 27px;
+  min-height: 34px;
+  display: block;
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#htmlacademy-logo");
+}
 
-// }
+.copyright__link:hover .copyright__text::after {
+  background-color: $bg-basic_green;
+}

@@ -6,21 +6,37 @@
 
 // }
 
-// .social__link{
+.social__link {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #666666;
+  min-width: 28px;
+  min-height: 28px;
+  display: block;
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+}
 
-// }
+.social__link--vkontakte {
+  mask-image: url("../../icons/stack.svg#vk-icon");
+}
 
-// .social__link--vkontakte{
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube-icon");
+}
 
-// }
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#telegram-icon");
+}
 
-// .social__link--youtube{
-
-// }
-
-// .social__link--telegram{
-
-// }
+.social__link--vkontakte:hover,
+.social__link--youtube:hover,
+.social__link--telegram:hover,
+.social__link--vkontakte:focus,
+.social__link--youtube:focus,
+.social__link--telegram:focus {
+  background-color: $bg-basic_green;
+}
 
 // .social__icon{
 

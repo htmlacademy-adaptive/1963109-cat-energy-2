@@ -17,26 +17,43 @@
 
 // }
 
-// .features__item{
+.features__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic_green;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
 
-// }
+.features__item--natural::before {
+  background-image: url("../../icons/stack.svg#natural");
+  background-size: 30px 32px;
+}
 
-// .features__item--natural{
+.features__item--powder::before {
+  background-image: url("../../icons/stack.svg#powder");
+  background-size: 26px 29px;
+}
 
-// }
+.features__item--eating::before {
+  background-image: url("../../icons/stack.svg#eat-icon");
+  background-size: 25px 30px;
+}
 
-// .features__item--powder{
-
-// }
-
-// .features__item--eating{
-
-// }
-
-// .features__item--change{
-
-// }
+.features__item--change::before {
+  background-image: url("../../icons/stack.svg#scale");
+  background-size: 26px 31px;
+}
 
 .features__description {
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .features__item::before {
+    width: 80px;
+    height: 80px;
+  }
 }
