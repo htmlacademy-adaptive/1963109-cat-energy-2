@@ -1,23 +1,83 @@
+.programm-variations__wrapper {
+  width: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+}
+
+.programm-variations__list {
+  width: 280px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+    width: fit-content;
+  }
+}
+
 .programm-variations__item {
   background-color: $bg-basic_gray;
   padding: 30px 33px 18px 20px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programm-variations__item::before {
   content: "";
   display: block;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    left: 450px;
+  }
 }
 
 .programm-variations__item--slim::before {
   width: 50px;
   height: 53px;
   background-image: url("../../icons/stack.svg#cat-slim-icon");
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .programm-variations__item--gain::before {
   width: 67px;
   height: 50px;
   background-image: url("../../icons/stack.svg#cat-gain-icon");
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    left: 420px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+  }
 }
 
 
@@ -30,10 +90,26 @@
   font-weight: 400;
   margin: 0;
   margin-left: 91px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
 }
 
 .programm-variations__description {
   text-align: left;
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 48px;
+  }
 }
 
 .programm-variations__link {
@@ -44,6 +120,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .programm-variations__link::after {
@@ -57,28 +139,11 @@
   mask-size: 24px 12px;
   mask-repeat: no-repeat;
   display: block;
-}
+  position: absolute;
+  top: 7px;
+  left: 100px;
 
-@media (min-width: 768px) {
-  .programm-variations__item--slim::before {
-    width: 200px;
-    height: 211px;
-  }
-
-  .programm-variations__item--gain::before {
-    width: 268px;
-    height: 200px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .programm-variations__item--slim::before {
-    width: 100px;
-    height: 106px;
-  }
-
-  .programm-variations__item--gain::before {
-    width: 134px;
-    height: 100px;
+  @media (min-width: $tablet-width) {
+    left: 120px;
   }
 }

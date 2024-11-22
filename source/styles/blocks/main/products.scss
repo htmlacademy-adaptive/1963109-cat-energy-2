@@ -1,24 +1,74 @@
-// .products {
+.products__wrapper {
+  padding-top: 27px;
 
-// }
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
 
-// .products__wrapper{
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
 
-// }
+.products__container-title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 41px;
 
-// .products__list {
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+  }
+}
 
-// }
+.products__list {
+  display: flex;
+  flex-flow: column wrap;
+  width: fit-content;
 
-// .products__item{
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    flex-direction: row;
+    gap: 60px;
+  }
 
-// }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    gap: 80px;
+  }
+}
+
+.products__item {
+  width: 280px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    background-color: $bg-basic_gray;
+    padding: 29px 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
 
 .products__item--more {
   background-image: url("../../icons/stack.svg#plus");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .products__more-desc {
@@ -27,48 +77,46 @@
   text-align: center;
 }
 
-// .products__link-img{
-
-// }
-
 .products__link-text {
   text-decoration: none;
   color: $base-color-text;
 }
 
-// .products__image{
-
-// }
-
-// .products__text{
-
-// }
-
 .products__title {
   font-family: $secondary-font;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #222222;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .products__description {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
-
-// .products__option {
-
-// }
-
-// .products__value {
-
-// }
 
 .products__button.button--secondary {
   display: block;
   padding: 10px 64px;
+}
+
+@media (min-width: $tablet-width) {
+  .products__button {
+    padding: 10px 94px;
+  }
 }

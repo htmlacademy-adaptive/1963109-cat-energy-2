@@ -1,21 +1,60 @@
-// .features {
+.features {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
 
-// }
+.features__wrapper {
+  padding-bottom: 49px;
 
-// .features__wrapper{
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
 
-// }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
+  }
+}
 
 .features__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
-// .features__list {
+.features__list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
 
-// }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 37px 153px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: unset;
+    justify-content: space-between;
+    width: 1220px;
+  }
+}
+
+.features__item {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 31px;
+    min-width: 230px;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
 
 .features__item::before {
   content: "";
@@ -25,6 +64,11 @@
   background-color: $bg-basic_green;
   background-position: 50%;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .features__item--natural::before {
@@ -49,11 +93,34 @@
 
 .features__description {
   text-align: left;
+  margin: 0;
+  width: 200px;
 }
 
-@media (min-width: 768px) {
-  .features__item::before {
-    width: 80px;
-    height: 80px;
+@media (min-width: $tablet-width) {
+  .features__item--natural {
+    background-image: url("../../icons/stack.svg#natural-background");
+    background-size: 112px 280px;
+  }
+
+  .features__item--powder {
+    background-image: url("../../icons/stack.svg#powder-background");
+    background-size: 134px 280px;
+  }
+
+  .features__item--eating {
+    background-image: url("../../icons/stack.svg#eating-background");
+    background-size: 134px 280px;
+  }
+
+  .features__item--change {
+    background-image: url("../../icons/stack.svg#scales-background");
+    background-size: 136px 280px;
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
   }
 }

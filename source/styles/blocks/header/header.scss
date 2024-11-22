@@ -1,38 +1,35 @@
-//пример
-// .header {
-//   @include button-rounded;
-//   background-color: $header-bg;
-//   color: $header-color;
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-//   &::before {
-//     content: "";
-//   }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-//   &::after {
-//     content: "";
-//   }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
-//   &:hover {}
-//   &:focus {}
+.main-header__logo {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  position: relative;
+  justify-content: center;
+  margin-left: 20px;
 
-//   @media (min-width: 768px) {}
+  @media (min-width: $tablet-width) {
+    width: unset;
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
 
-//   &--mobile {} // модификатор блока
-// }
-
-// .header__logo {
-//   &::before {
-//     content: "";
-//   }
-
-//   &::after {
-//     content: "";
-//   }
-
-//   &:hover {}
-//   &:focus {}
-
-//   @media (min-width: 768px) {}
-
-//   &--big {} // модификатор элемента
-// }
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
+}

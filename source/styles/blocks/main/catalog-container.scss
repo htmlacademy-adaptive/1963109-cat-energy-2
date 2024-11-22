@@ -1,8 +1,7 @@
+.catalog-container {
+  padding-top: 27px;
 
-.catalog-container__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  line-height: 36px;
-  color: #000000;
-  text-align: left;
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
 }

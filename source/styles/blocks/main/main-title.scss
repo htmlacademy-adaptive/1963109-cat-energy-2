@@ -1,0 +1,18 @@
+.main-title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  width: 249px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 204px 40px 90;
+  }
+}
