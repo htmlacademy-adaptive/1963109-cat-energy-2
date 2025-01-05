@@ -6,13 +6,23 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 55px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
   }
 }
+
+.main-header--catalog {
+  position: relative;
+}
+
 
 .main-header__logo {
   height: 65px;

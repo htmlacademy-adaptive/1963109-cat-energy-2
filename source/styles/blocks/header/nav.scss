@@ -8,7 +8,7 @@
 
 .main-nav__list {
   @media (min-width: $tablet-width) {
-    margin-right: 30px;
+    margin-right: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
 }
 
 .main-nav__toggle {
-  background-color: #ffffff;
+  background-color: $bg-basic_white;
   background-repeat: no-repeat;
   background-size: 24px 24px;
   border: none;

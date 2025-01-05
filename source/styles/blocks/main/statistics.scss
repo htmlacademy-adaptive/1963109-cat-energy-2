@@ -1,11 +1,15 @@
 .statistics__wrapper {
-
   width: fit-content;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: unset;
+  }
 }
 
 .statistics__list {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -15,6 +19,10 @@
     justify-content: unset;
     width: fit-content;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .statistics__number {
@@ -22,7 +30,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  border: 1px solid rgb(205, 205, 205);
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
   padding: 14px 20px;
   width: 124px;
@@ -30,7 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 20px;
+    padding: 15px 25px;
     width: 162px;
   }
 }
@@ -39,10 +47,21 @@
   font-size: 12px;
   line-height: 100%;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 77px;
+  position: relative;
+  top: -10px;
+  background-color: $bg-basic_gray;
+
 
   @media (min-width: $tablet-width) {
+    width: 125px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $bg-basic_white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-basic_gray;
   }
 }

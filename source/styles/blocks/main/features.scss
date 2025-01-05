@@ -1,5 +1,5 @@
 .features {
-  border-bottom: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .features__wrapper {
@@ -7,9 +7,11 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 47px;
+    padding-right: 79px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 0;
     padding-bottom: 69px;
   }
 }
@@ -21,17 +23,24 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .features__list {
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
+  counter-reset: list-item;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 37px 153px;
-    width: 708px;
+    row-gap: 37px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,17 +51,25 @@
 }
 
 .features__item {
+  position: relative;
   display: flex;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    max-width: 250px;
     flex-direction: column;
-    justify-content: center;
     gap: 31px;
     min-width: 230px;
-    min-height: 300px;
     background-repeat: no-repeat;
     background-position: 50% 0;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: unset;
+    justify-content: unset;
   }
 }
 
@@ -64,6 +81,7 @@
   background-color: $bg-basic_green;
   background-position: 50%;
   background-repeat: no-repeat;
+  min-width: 60px;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -91,36 +109,34 @@
   background-size: 26px 31px;
 }
 
+@media (min-width: $tablet-width) {
+  .features__item::after {
+    content: counter(list-item);
+    counter-increment: list-item;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $bg-basic_gray;
+  }
+}
+
 .features__description {
   text-align: left;
   margin: 0;
-  width: 200px;
-}
 
-@media (min-width: $tablet-width) {
-  .features__item--natural {
-    background-image: url("../../icons/stack.svg#natural-background");
-    background-size: 112px 280px;
-  }
-
-  .features__item--powder {
-    background-image: url("../../icons/stack.svg#powder-background");
-    background-size: 134px 280px;
-  }
-
-  .features__item--eating {
-    background-image: url("../../icons/stack.svg#eating-background");
-    background-size: 134px 280px;
-  }
-
-  .features__item--change {
-    background-image: url("../../icons/stack.svg#scales-background");
-    background-size: 136px 280px;
-  }
-
-  .features__title {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    width: unset;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: pre-line;
   }
 }
