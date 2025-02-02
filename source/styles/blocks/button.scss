@@ -12,6 +12,22 @@
   @include button($bg-basic_green, $additional-color-text);
 }
 
+.button--primary:hover {
+  background-color: #5eaa2f;
+}
+
 .button--secondary {
   @include button($bg-basic_gray,  $base-color-text);
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  background-color: #ebebeb;
+}
+
+.button--primary:active {
+  color: #b5b8b1;
 }

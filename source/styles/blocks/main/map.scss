@@ -1,6 +1,7 @@
 .map {
   position: relative;
   z-index: 1;
+  background-color: $bg-basic_gray;
 }
 
 .map::after {
@@ -23,6 +24,9 @@
 
   @media (min-width: $desktop-width) {
     top: 131px;
+    transform: unset;
+    left: unset;
+    right: 419px;
   }
 }
 

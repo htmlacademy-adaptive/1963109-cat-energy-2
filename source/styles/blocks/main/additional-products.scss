@@ -1,16 +1,25 @@
+.additional-products__section-title-wrapper {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
 .additional-products__section-title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
+  width: 306px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
     margin-left: 40px;
     position: relative;
+    width: 382px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     margin: 0;
+    width: 456px;
   }
 }
 
@@ -49,7 +58,9 @@
   padding-bottom: 18px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
+  min-height: 130px;
   display: grid;
+  column-gap: 1px;
   grid-template-areas:
     "title title"
     "desc  price"
@@ -64,6 +75,7 @@
     grid-template-areas: unset;
     grid-template-columns: 1fr 1fr 93px;
     grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +97,7 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   grid-area: title;
 
   @media (min-width: $tablet-width) {
@@ -183,6 +195,10 @@
     text-align: center;
     height: fit-content;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../images/gift-backgroung-mobile@2x.jpg");
+  }
 }
 
 .additional-products__gift-decription {
@@ -190,6 +206,7 @@
   width: 161px;
   font-size: 16px;
   line-height: 20px;
+  white-space: pre-line;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

@@ -4,6 +4,27 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  //position: absolute;
+  z-index: 1;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $bg-basic_white;
+  }
+}
+
+.main-nav--close {
+  position: relative;
+}
+
+.main-nav--close .main-nav__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+
+.main-nav--close .main-nav__toggle {
+  background-image: url("../../icons/stack.svg#burger");
 }
 
 .main-nav__list {
@@ -23,14 +44,10 @@
   border: none;
   width: 24px;
   height: 24px;
-  background-image: url("../../icons/stack.svg#burger");
+  background-image: url("../../icons/stack.svg#close");
   margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
-
-.main-nav__toggle--close {
-  background-image: url("../../icons/stack.svg#close");
 }

@@ -12,13 +12,17 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    background-color: #ffffff;
+    background-color: $bg-basic_white;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../../images/hero-background-desktop@1x.jpg") 50% no-repeat, linear-gradient(90deg, $bg-basic_white 0%, $bg-basic_white 50%, $bg-basic_green 50%) 50% no-repeat;
     background-size: contain;
     background-position: 100% 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../images/hero-background-desktop@2x.jpg") 50% no-repeat, linear-gradient(90deg, $bg-basic_white 0%, $bg-basic_white 50%, $bg-basic_green 50%) 50% no-repeat;
   }
 }
 
@@ -53,20 +57,26 @@
 .hero__wrapper::after {
   position: absolute;
   content: "";
-  background-image: url("../../../images/hero-desktop@1x.png");
+  background-image: url("../../../images/hero-mobile@1x.png");
   left: 50%;
   transform: translateX(-50%);
   bottom: 43px;
-  background-size: 300px 270px;
+  background-size: 280px 270px;
   background-repeat: no-repeat;
-  width: 320px;
+  object-fit: contain;
+  width: 280px;
   height: 270px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../images/hero-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     bottom: 0;
-    background-size: 669px 606px;
-    width: 621px;
-    height: 613px;
+    background-size: 709px 609px;
+    background-image: url("../../../images/hero-tablet@1x.jpg");
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +85,7 @@
     bottom: 52px;
     right: 331px;
     background-size: 552px 499px;
+    background-image: url("../../../images/hero-desktop@1x.png");
     width: 552px;
     height: 499px;
   }
@@ -92,6 +103,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -102,6 +114,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+    line-height: 20px;
   }
 }
 
@@ -139,4 +152,13 @@
     position: relative;
     left: unset;
   }
+}
+
+
+.hero__choose-pr:hover {
+  background-color: #5eaa2f;
+}
+
+.hero__choose-pr :active {
+  opacity: 0.33;
 }

@@ -54,6 +54,9 @@
 }
 
 .subscription__form {
+  display: flex;
+  flex-wrap: wrap;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: fit-content;
@@ -67,8 +70,10 @@
   text-align: left;
   text-transform: uppercase;
   width: 280px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   padding: 10px;
+  border: 2px solid #cdcdcd;
+  min-height: 56px;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -78,6 +83,18 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
+}
+
+.subscription-input:hover {
+  border: 2px solid #cdcdcd;
+}
+
+.subscription-input:focus {
+  border: 2px solid #444444;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid #ff8282;
 }
 
 .subscription__button {

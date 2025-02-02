@@ -124,6 +124,7 @@
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 24px;
+    width: 264px;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,11 +164,16 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
   }
 }
 
@@ -182,15 +188,8 @@
   mask-size: 24px 12px;
   mask-repeat: no-repeat;
   display: block;
-  position: absolute;
-  top: 7px;
-  left: 100px;
+}
 
-  @media (min-width: $tablet-width) {
-    left: 132px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 130px;
-  }
+.programm-variations__link:active {
+  opacity: 0.33;
 }
