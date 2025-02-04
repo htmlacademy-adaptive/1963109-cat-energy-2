@@ -190,6 +190,18 @@
   display: block;
 }
 
-.programm-variations__link:active {
-  opacity: 0.33;
+.programm-variations__link:hover,
+.programm-variations__link:active,
+.programm-variations__link:focus {
+  opacity: 0.3;
+}
+
+.programm-variations__link:hover::after {
+  width: 32px;
+  mask-size: 32px 15px;
+}
+
+.programm-variations__link:active::after {
+  width: 32px;
+  mask-size: 32px 15px;
 }

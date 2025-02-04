@@ -21,11 +21,12 @@
   mask-image: url("../../icons/stack.svg#telegram-icon");
 }
 
-.social__link--vkontakte:hover,
-.social__link--youtube:hover,
-.social__link--telegram:hover,
-.social__link--vkontakte:focus,
-.social__link--youtube:focus,
-.social__link--telegram:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: $bg-basic_green;
+}
+
+.social__link:active,
+.social__link:focus {
+  opacity: 0.3;
 }

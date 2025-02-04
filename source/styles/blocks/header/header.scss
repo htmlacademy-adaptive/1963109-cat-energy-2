@@ -25,7 +25,6 @@
   position: relative;
 }
 
-
 .main-header__logo {
   height: 65px;
   display: flex;
@@ -46,10 +45,3 @@
   }
 }
 
-.main-header__logo :hover {
-  opacity: 0.8;
-}
-
-.main-header__logo :active {
-  opacity: 0.33;
-}

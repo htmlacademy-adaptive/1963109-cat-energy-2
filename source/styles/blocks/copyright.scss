@@ -36,3 +36,15 @@
 .copyright__link:hover .copyright__text::after {
   background-color: $bg-basic_green;
 }
+
+.copyright__link:focus .copyright__text::after {
+  background-color: $bg-basic_green;
+}
+
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
+}
+
+.copyright__link:active .copyright__text::after {
+  background-color: $bg-basic_green;
+}

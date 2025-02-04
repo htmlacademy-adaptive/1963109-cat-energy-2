@@ -29,7 +29,7 @@
   border: none;
   border-radius: 2px;
   width: 4px;
-  height: 98%;
+  height: 100%;
   padding: 0;
   display: block;
   position: absolute;
@@ -69,18 +69,6 @@
 
 .compare-slider__button:hover {
   background-color: #68b738;
-
-  .compare-slider__button::before {
-    border: 2px solid #68b738;
-  }
-
-  .compare-slider__button::after {
-    background-color: #68b738;
-  }
-}
-
-.compare-slider__button :active {
-  background-color: #5eaa2f;
 }
 
 .compare-slider__button:hover::before {
@@ -89,4 +77,17 @@
 
 .compare-slider__button:hover::after {
   background-color: #68b738;
+}
+
+.compare-slider__button:active {
+  background-color: #5eaa2f;
+  opacity: 0.6;
+}
+
+.compare-slider__button:active::before {
+  border: 2px solid #5eaa2f;
+}
+
+.compare-slider__button:active::after {
+  background-color: #5eaa2f;
 }
