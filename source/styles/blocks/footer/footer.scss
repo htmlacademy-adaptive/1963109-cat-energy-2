@@ -31,14 +31,6 @@
   }
 }
 
-.main-footer__wrapper .logo .logo__text {
-  @media (min-width: $desktop-width) {
-    width: 128px;
-    height: 24px;
-  }
-}
-
-
 .main-footer__social {
   display: flex;
   flex-flow: row wrap;
