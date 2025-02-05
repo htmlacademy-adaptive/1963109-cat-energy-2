@@ -1,0 +1,93 @@
+.compare-slider {
+  position: relative;
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.compare-slider__item {
+  object-fit: cover;
+}
+
+.compare-slider__item--fat {
+  object-position: left;
+}
+
+.compare-slider__item--fit {
+  object-position: right;
+}
+
+.compare-slider__button {
+  cursor: pointer;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.compare-slider__button::before {
+  content: "";
+  background-color: $bg-basic_white;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.compare-slider__button::after {
+  content: "";
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: url("../../icons/stack.svg#slider-arrows");
+  mask-position: 50%;
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+}
+
+.compare-slider__button:hover {
+  background-color: #68b738;
+}
+
+.compare-slider__button:hover::before {
+  border: 2px solid #68b738;
+}
+
+.compare-slider__button:hover::after {
+  background-color: #68b738;
+}
+
+.compare-slider__button:active {
+  background-color: #5eaa2f;
+  opacity: 0.6;
+}
+
+.compare-slider__button:active::before {
+  border: 2px solid #5eaa2f;
+}
+
+.compare-slider__button:active::after {
+  background-color: #5eaa2f;
+}

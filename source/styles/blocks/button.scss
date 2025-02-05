@@ -1,0 +1,34 @@
+.button {
+  text-decoration: none;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button--primary {
+  @include button($bg-basic_green, $additional-color-text);
+}
+
+.button--primary:hover {
+  background-color: #5eaa2f;
+}
+
+.button--secondary {
+  @include button($bg-basic_gray,  $base-color-text);
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  background-color: #ebebeb;
+}
+
+.button--primary:active {
+  color: #b5b8b1;
+  background-color: #5eaa2f;
+}

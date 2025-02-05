@@ -1,0 +1,139 @@
+.example {
+  background-color: $bg-basic_gray;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(180deg, $bg-basic_white 0%, $bg-basic_white 57%, $bg-basic_gray 50%);
+    background-position: bottom;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient($bg-basic_white 0% 23%, $bg-basic_gray 23%) bottom;
+  }
+}
+
+.example__wrapper {
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    max-width: 1220px;
+    padding-bottom: 73px;
+    display: grid;
+    grid-template-areas:
+      "title slider"
+      "desc  slider"
+      "stat  slider"
+      "cost  slider";
+    column-gap: 224px;
+  }
+}
+
+.example__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  width: 195px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+    width: 325px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 146px;
+    grid-area: title;
+  }
+}
+
+.example__description {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 708px;
+    margin-bottom: 55px;
+    white-space: pre-line;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+    grid-area: desc;
+    margin-bottom: 69px;
+    white-space: unset;
+  }
+}
+
+.example__wrapper .statistics {
+  grid-area: stat;
+}
+
+.example__cost {
+  font-family: $secondary-font;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 174px;
+    text-align: right;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: cost;
+    width: unset;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 63px;
+    margin: 0;
+  }
+}
+
+.example__cost-number {
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.example__slider-wrapper {
+  grid-area: slider;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

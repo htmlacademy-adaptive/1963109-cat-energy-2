@@ -1,0 +1,50 @@
+.copyright {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.copyright__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__text::after {
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #666666;
+  min-width: 27px;
+  min-height: 34px;
+  display: block;
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#htmlacademy-logo");
+}
+
+.copyright__link:hover .copyright__text::after {
+  background-color: $bg-basic_green;
+}
+
+.copyright__link:focus .copyright__text::after {
+  background-color: $bg-basic_green;
+}
+
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
+}
+
+.copyright__link:active .copyright__text::after {
+  background-color: $bg-basic_green;
+}

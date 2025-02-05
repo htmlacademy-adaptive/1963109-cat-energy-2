@@ -1,0 +1,7 @@
+.catalog-container {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+}
