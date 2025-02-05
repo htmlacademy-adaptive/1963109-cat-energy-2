@@ -10,21 +10,23 @@
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-nav main-nav--close">
+    <nav class="main-nav main-nav--close" id="menu">
       <a class="main-header__logo logo" href="#">
         <picture>
           <source type="image/svg+xml" width="70" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop-icon.svg">
           <source type="image/svg+xml" width="60" height="59" media="(min-width: 768px)" srcset="images/logo-tablet-icon.svg">
           <img class="logo__image" width="33" height="38" src="images/logo-mobile-icon.svg" alt="логотип Cat Energy">
         </picture>
-        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Товарный знак Cat Energy">
+        <img class="logo__text logo__text--header" src="images/logo-text.svg" width="101" height="18" alt="Товарный знак Cat Energy">
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle" id="nav-toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list site-list--close">

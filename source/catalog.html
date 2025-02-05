@@ -6,21 +6,23 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header main-header--catalog">
-    <nav class="main-nav main-nav--close">
+    <nav class="main-nav main-nav--close" id="menu">
       <a class="main-header__logo logo" href="index.html">
         <picture>
           <source type="image/svg+xml" width="70" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop-icon.svg">
           <source type="image/svg+xml" width="60" height="59" media="(min-width: 768px)" srcset="images/logo-tablet-icon.svg">
           <img class="logo__image" width="33" height="38" src="images/logo-mobile-icon.svg" alt="логотип Cat Energy">
         </picture>
-        <img class="logo__text" width="101" height="18" src="images/logo-text.svg" alt="Товарный знак Cat Energy">
+        <img class="logo__text logo__text--header" width="101" height="18" src="images/logo-text.svg" alt="Товарный знак Cat Energy">
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle" type="button" id="nav-toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list site-list--catalog site-list--close">

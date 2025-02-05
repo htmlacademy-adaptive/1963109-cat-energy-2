@@ -139,6 +139,12 @@
   color: $base-color-text;
 }
 
+.products__link-text:hover,
+.products__link-text:focus,
+.products__link-text:active {
+  opacity: 0.6;
+}
+
 .products__title {
   font-family: $secondary-font;
   font-size: 16px;
@@ -177,6 +183,12 @@
     margin: 0;
     margin-bottom: 5px;
   }
+}
+
+.products__link-img:hover,
+.products__link-img:focus,
+.products__link-img:active {
+  opacity: 0.8;
 }
 
 .products__link-img--small {
