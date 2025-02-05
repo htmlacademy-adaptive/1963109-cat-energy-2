@@ -182,7 +182,7 @@
   background-color: #000000;
   width: 24px;
   height: 12px;
-  transition: all, all 1.3s;
+  transition: all, all 0.2s;
   mask-image: url("../../icons/stack.svg#arrow");
   mask-position: 100%;
   mask-size: 24px 12px;
@@ -190,7 +190,6 @@
   display: block;
 }
 
-.programm-variations__link:hover,
 .programm-variations__link:active,
 .programm-variations__link:focus {
   opacity: 0.3;
